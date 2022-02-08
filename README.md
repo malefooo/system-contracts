@@ -1,15 +1,23 @@
-# Basic Sample Hardhat Project
+# OVR System contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
+## Compile
 
 ```shell
-npx hardhat accounts
 npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
+
+## Contracts
+
+- OVR.sol: A upgradeable ERC20 token.
+- staking: Staking related contracts.
+    - Staking.sol: Staking contracts.
+    - Consensus.sol: Some function called by consensus.
+    - Coinbase.sol: Block based coinbase.
+    - Rewards.sol: Rewards for staking.
+    - Goverance.sol: Manage system contracts.
+- interfaces
+    - IConsensus.sol: Interface for consensus precompile.
+    - IStaking.sol: Interface for staking.
+    - IRewards.sol: Interface for rewards.
+
+
